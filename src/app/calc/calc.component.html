@@ -1,0 +1,41 @@
+<div class="container calculator-container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-4 col-sm-12">
+        <!-- Display Area -->
+        <div class="display-screen p-3 text-right">
+          <span id="calc-display">{{this.currentNo}}</span>
+        </div>
+        <!-- Buttons Area -->
+        <div class="calc-buttons">
+          <div class="row">
+            <button (click)="inputDigit('7')" class="btn btn-secondary col-3">7</button>
+            <button (click)="inputDigit('8')" class="btn btn-secondary col-3">8</button>
+            <button (click)="inputDigit('9')" class="btn btn-secondary col-3">9</button>
+            <button (click)="inputOperator('/')" class="btn btn-warning col-3">/</button>
+          </div>
+          <div class="row">
+            <button (click)="inputDigit('4')" class="btn btn-secondary col-3">4</button>
+            <button  (click)="inputDigit('5')" class="btn btn-secondary col-3">5</button>
+            <button (click)="inputDigit('6')" class="btn btn-secondary col-3">6</button>
+            <button (click)="inputOperator('*')" class="btn btn-warning col-3">*</button>
+          </div>
+          <div class="row">
+            <button (click)="inputDigit('1')" class="btn btn-secondary col-3">1</button>
+            <button (click)="inputDigit('2')" class="btn btn-secondary col-3">2</button>
+            <button (click)="inputDigit('3')" class="btn btn-secondary col-3">3</button>
+            <button (click)="inputOperator('-')" class="btn btn-warning col-3">-</button>
+          </div>
+          <div class="row">
+            <button (click)="inputDigit('.')" class="btn btn-secondary col-3">.</button>
+            <button (click)="inputDigit('0')" class="btn btn-secondary col-3"> 0 </button>
+            <button (click)="calculate()" class="btn btn-secondary col-3">=</button>
+            <button (click)="inputOperator('+')" class="btn btn-warning col-3">+</button>
+          </div>
+          <div class="row">
+            <button (click)="clear()" class="btn btn-danger col-12">C</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
