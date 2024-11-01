@@ -81,6 +81,7 @@ export class CalcComponent {
       this.operator = null;
       this.firstValue = null;
       this.waitingForSecondValue = false;  // Reset after calculation
+      console.log(this.waitingForSecondValue);
     }
   }
 }
